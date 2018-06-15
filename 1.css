@@ -1,0 +1,68 @@
+/**{margin: 0; padding: 0;} */
+/* Layout styles */
+
+.wraper {
+  width: 100%;
+  color: #fff;
+  font-family: tahoma;
+  font-size: 12px;
+}
+
+.main {
+  width: 80%;
+  float: left;
+}
+
+.right-side-bar {
+  width: 20%;
+  float: left;
+}
+
+.abv-img {
+  height: 100px;
+}
+
+
+/* Unities styles */
+
+.bg-blue {
+  background-color: blue;
+}
+
+.bg-green {
+  background-color: green;
+}
+
+.bg-yellow {
+  background-color: yellow;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.h100 {
+  height: 100px;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.h500 {
+  height: 500px;
+}
+
+.h1000 {
+  height: 1000px;
+}
+
+.h2000 {
+  height: 2000px;
+}
+
+
+/* Your plugin style here */
+.stop {
+  position: fixed;
+}
