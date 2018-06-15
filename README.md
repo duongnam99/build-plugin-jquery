@@ -8,7 +8,7 @@
 
 ## Liên kết
 - [Demo- jsfiddle](https://jsfiddle.net/mogp9tjf/10/)
-- [github page](https://duongnam99.github.io/build-plugin-jquery/)
+- [Github page](https://duongnam99.github.io/build-plugin-jquery/)
 
 ## Hướng dẫn sử dụng    
 - Select element (phần tử con muốn có hiệu ứng), gọi hàm inner_float(), truyền object vào hàm  
