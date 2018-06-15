@@ -11,7 +11,7 @@
 
 ## Hướng dẫn sử dụng    
 - Select element (phần tử con muốn có hiệu ứng), gọi hàm inner_float(), truyền object vào hàm  
-vd: khoảng cách div con với lề trên của sổ trình duyệt là 10px
+vd: khoảng cách div con với lề trên của sổ trình duyệt là 10px:
 > $('.className').inner_float({
 >    'top': '10px'
 > })
