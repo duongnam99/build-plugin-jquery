@@ -32,45 +32,47 @@ $.fn.inner_float = function(options) { // <=> window.jQuery.prototype.inner_floa
       $(window).scroll(function(event) {
 
         var window_position = $(window).scrollTop() 
-        // check to take "child" back to default position
-        if(distance_child_to_top <= parent_offset_top){
-            if(window_position < (child_offset_top - distance_child_to_top)){
-               child.css({
+        
+        function phase_1(){
+            child.css({
                     'position': '',
                     'top': '',
                     'width': String(child_width)+'px'
                 });
-
-            }else if(window_position >= (child_offset_top - distance_child_to_top) && window_position < out){
-               child.css({
+        }
+        function phase_2(){
+            child.css({
                     'position': 'fixed',
                     'top': set.top,
                     'width': String(child_width)+'px'
                 });
-            }
-        }else if(distance_child_to_top >= parent_offset_top){
-          if(window_position == 0){
-              child.css({
-                'position': '',
-                'top': '',
-                'width': String(child_width)+'px'
-               });
-          }else if(window_position > 0 && window_position < out){
-             child.css({
-                  'position': 'fixed',
-                  'top': set.top,
-                  'width': String(child_width)+'px'
-              });
-           }
-        } 
-
-        if(window_position >= out){
+        }
+        function phase_3(){
             child.parent().css('position','relative');
             child.css({
                 'position': 'absolute',
                 'top': String(child_frozen) +'px',  
                 'width': String(child_width)+'px'
             });
+        }
+
+        if(distance_child_to_top <= parent_offset_top){
+            if(window_position < (child_offset_top - distance_child_to_top)){
+              phase_1();
+
+            }else if(window_position >= (child_offset_top - distance_child_to_top) && window_position < out){
+               phase_2()
+            }
+        }else if(distance_child_to_top >= parent_offset_top){
+          if(window_position == 0){
+              phase_1();
+          }else if(window_position > 0 && window_position < out){
+              phase_2();
+           }
+        } 
+
+        if(window_position >= out){
+            phase_3();
         }
 
       });

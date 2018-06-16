@@ -13,9 +13,11 @@
 ## Hướng dẫn sử dụng    
 - Select element (phần tử con muốn có hiệu ứng), gọi hàm inner_float(), truyền object vào hàm  
 vd: khoảng cách div con với lề trên của sổ trình duyệt là 10px:
-> $('.className').inner_float({
->    'top': '10px'
-> })
+```
+$('.className').inner_float({
+    'top': '10px'
+})
+```
 ## Kiến thức nắm được  
 - khai báo hàm với prototype để xây dựng plugin
 - ôn lại object trong js, hàm viết đè object này lên object khác: extend()
