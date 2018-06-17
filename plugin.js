@@ -61,7 +61,7 @@ $.fn.inner_float = function(options) { // <=> window.jQuery.prototype.inner_floa
               phase_1();
 
             }else if(window_position >= (child_offset_top - distance_child_to_top) && window_position < out){
-               phase_2()
+               phase_2();
             }
         }else if(distance_child_to_top >= parent_offset_top){
           if(window_position == 0){
