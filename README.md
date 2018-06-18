@@ -24,8 +24,5 @@ $('.className').inner_float({
 - sự kiện scroll, các hàm lấy vị trí, lấy chiều dài, rộng của phần tử
 - hàm ép kiểu: String(), Number()...
 
-## Phát triển thêm
-- thêm hiệu ứng khi scroll ngược lên và trở về vị trí ban đầu
-
 ## Credit
 - phầm mềm hỗ trợ: thư viện jquery bản 3.3.1
